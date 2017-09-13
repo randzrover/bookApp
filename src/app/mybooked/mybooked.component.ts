@@ -20,6 +20,7 @@ export class MyBookedComponent implements OnInit {
   getAddressInfo(){
     this.GISService.getAddInfo().subscribe((ret)=> this.addressList = ret.candidates as Candidates);
   }
+  
   catchResult(result: any): void{
     //alert('test');
   }
