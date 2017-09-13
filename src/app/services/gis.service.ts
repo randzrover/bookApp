@@ -22,6 +22,7 @@ export class gisService{
         return this._http.get(this.gisURL)
         .map((resp:Response)=> resp.json());
     }
+    
     private handleError(error: any): Promise<any> {
         alert(error);
         console.error('An error occurred', error); // for demo purposes only

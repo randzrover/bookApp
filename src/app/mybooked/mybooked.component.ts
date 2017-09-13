@@ -17,10 +17,6 @@ export class MyBookedComponent implements OnInit {
   constructor(private GISService: gisService){}
   addressList : Candidates;
 
-  // getGIS(): Promise<GIS[]>{
-  //   return this.addressList = this.GISService.getAddressInfo();
-  // }
-
   getAddressInfo(){
     this.GISService.getAddInfo().subscribe((ret)=> this.addressList = ret.candidates as Candidates);
   }
