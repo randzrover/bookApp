@@ -8,7 +8,6 @@ import 'rxjs/add/operator/map';
 import { GIS,Candidates } from './gis';
 import { GISMock } from './gis.mock';
 
-
 @Injectable()
 export class gisService{
     gisURL = "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?Address=kello%20school,%20Wichita%20KS&outFields=AddrNum,StName,City,Postal,Subregion,Country&forStorage=false&f=pjson";
