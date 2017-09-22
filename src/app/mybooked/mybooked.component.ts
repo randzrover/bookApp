@@ -20,17 +20,16 @@ export class MyBookedComponent implements OnInit {
   getAddressInfo(){
     this.GISService.getAddInfo().subscribe((ret)=> this.addressList = ret.candidates as Candidates);
   }
-  
-  catchResult(result: any): void{
-    //alert('test');
-  }
 
   private handleError(error: any): Promise<any> {
         alert(error);
         console.error('An error occurred', error); // for demo purposes only
         return Promise.reject(error.message || error);
     }
-
+  
+  testFN(){
+    return true;
+  }
   ngOnInit(){
      this.getAddressInfo();
   }
