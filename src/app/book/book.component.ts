@@ -13,7 +13,7 @@ export class BookComponent {
   withImage = 'http://authorsarticle.com/wp-content/uploads/2017/06/condo-unit.jpg'; 
   altImage = "FULL Image";
 
-  ngOnInit(){
+  ngOnInit():void{
       alert('test');
   }
 }
